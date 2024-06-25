@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <h2>Sorting Algorithm Visualizer</h2>
+        <div class="controls">
+            <input type="text" id="dataInput" placeholder="Enter numbers separated by commas">
+            <button id="drawChart">Draw Chart</button>
+            <select id="sortMethod">
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="quickSort">Quick Sort</option>
+                <option value="mergeSort">Merge Sort</option>
+                <option value="countSort">Count Sort</option>
+                <option value="bucketSort">Bucket Sort</option>
+                <option value="combSort">Comb Sort</option>
+                <option value="heapSort">Heap Sort</option>
+                <option value="radixSort">Radix Sort</option>
+                <option value="shellSort">Shell Sort</option>
+            </select>
+            <button id="startSort">Sort in Ascending order</button>
+            <button id="startSortDesc">Start Sort Descending order</button>
+        </div>
+        <canvas id="chart"></canvas>
+    </div>
+    
+    <script src="sortingAlgo.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
